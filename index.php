@@ -6,16 +6,17 @@ $extensions_autorisees=array('.png','.jpg','.gif','.igo','jpeg');
 if(isset($_POST['submit']))
 {
     $fileCount= count($_FILES['file']['name']);
-
+   
     for($i=0;$i<$fileCount;$i++){
 
         $fileName = $_FILES['file']['name'][$i];
+        $file_dest='upload/'.$fileName;
 
         $file_extension =strrchr($fileName, ".");
 
         if(in_array($file_extension, $extensions_autorisees)){
 
-            $sql ="INSERT INTO fileup (title,img) VALUES ('$fileName','$fileName')";
+            $sql ="INSERT INTO fileup (title,img) VALUES ('$fileName','$file_dest')";
             
             if($db->query($sql)== TRUE){
                 echo "fichier enregistré";
