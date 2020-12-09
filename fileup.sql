@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 07 déc. 2020 à 12:37
+-- Généré le :  mer. 09 déc. 2020 à 07:40
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -31,10 +31,9 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `fileup`;
 CREATE TABLE IF NOT EXISTS `fileup` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(360) CHARACTER SET utf8mb4 NOT NULL,
   `img` varchar(360) CHARACTER SET utf8mb4 NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

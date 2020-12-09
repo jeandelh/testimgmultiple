@@ -16,7 +16,7 @@ if(isset($_POST['submit']))
 
         if(in_array($file_extension, $extensions_autorisees)){
 
-            $sql ="INSERT INTO fileup (title,img) VALUES ('$fileName','$file_dest')";
+            $sql ="INSERT INTO fileup (img) VALUES ('$file_dest')";
             
             if($db->query($sql)== TRUE){
                 echo "fichier enregistré";
